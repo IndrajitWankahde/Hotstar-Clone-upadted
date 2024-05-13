@@ -11,3 +11,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+variable "zones" {
+  description = "availability zones region"
+  default = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east1d"]
+}
