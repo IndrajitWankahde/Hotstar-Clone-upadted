@@ -13,5 +13,6 @@ provider "aws" {
 }
 variable "zones" {
   description = "availability zones region"
+  type = list(string)
   default = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east1d"]
 }
